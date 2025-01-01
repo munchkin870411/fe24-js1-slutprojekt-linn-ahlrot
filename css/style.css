@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button,
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+main.person-layout {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card.movie-card {
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.known-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 12px;
+}
+
+.known-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.known-content img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+
+.known-content .media-type {
+  text-transform: capitalize;
+}
+
+.known-content p {
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  main.person-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  main.person-layout {
+    grid-template-columns: 1fr;
+  }
+}

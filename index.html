@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMDB</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Munchkin Movie DataBase</h1>
+      <nav>
+        <button id="top-rated-btn">Top Rated Movies</button>
+        <button id="popular-btn">Popular Movies</button>
+        <button id="horror-btn">Top Rated Horror Movies</button>
+        <form>
+          <input type="radio" id="movie" name="search_type" value="movie" />
+          <label for="html">Movie</label>
+          <input type="radio" id="Person" name="search_type" value="person" />
+          <label for="css">Person</label>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a movie or person..."
+          />
+          <button id="search-btn">Search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- Dynamic content will be loaded here -->
+    </main>
+  </body>
+</html>
