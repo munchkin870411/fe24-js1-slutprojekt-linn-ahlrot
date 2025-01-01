@@ -31,7 +31,6 @@ This application uses the TMDB API to fetch movie and person data. Ensure you us
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MMDB.git
-   cd MMDB
+   git clone https://github.com/munchkin870411/fe24-js1-slutprojekt-linn-ahlrot.git
 2. Install dependencies: No additional dependencies are required; ensure you have a modern browser.
 3. Open the application: Launch index.html in your favorite browser.
